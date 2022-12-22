@@ -8,23 +8,21 @@
 </head>
 <body>
     <h1>formulario de cadastro</h1>
-    <form> <label for="nome">seu nome</label>
-        <input id="nome" type="nome" />
+    <form> <label for="name">seu nome</label>
+        <input id="name" type="name" />
        
 <br/>
 <label for="email">seu email</label>
         <input id="email" type="email" />
 <br/>
-<label for="senha">sua senhal</label>
-        <input id="senha" type="senha" />
+<label for="password">sua senha</label>
+        <input id="password" type="password" />
 <br/>
 <input type="checkbox" id="checkbox-termos"/> <label>aceito os termos</label>
 
 
-<br/><a href="https://lms.ebaconline.com.br/" target="_blank">
-    <img src="https://media.tvchurrasco.com.br/site/wp-content/uploads/2019/04/bot%C3%A3o-cadastrar-png-7.png"
-    width="250 pxp"
-    alt="botao"/>
+<br/>
+    <button type="submit">cadastrar</button>
     </a>
     </form>
 </body>
