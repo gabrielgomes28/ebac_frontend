@@ -1,0 +1,29 @@
+ function pessoa(nome,idade,cpf){
+    this.nome=nome;
+    this.idade=idade;
+    this.cpf=cpf;
+    this.dizoi=function(){
+ console.log(this.nome + "diz olá");
+    }
+   
+ }
+ function professor(nome,idade,cpf,titulo,salario){
+    this.titulo=titulo;
+    this.salario=salario;
+    pessoa.call(this,nome,idade,cpf);
+ }
+
+ function aluno(nome,idade,cpf,curso,fase){
+    this.curso=curso;
+    this.fase=fase;
+    pessoa.call(this,nome,idade,cpf);
+ }
+
+ const pessoa1=new pessoa("roger",40,12345677);
+ const professor1=new professor(roger,40,12345677,mestre,8000);
+ const aluno1=new aluno("gabriel",19,123321,"sistema",3);
+ pessoa1.dizoi();
+
+ console.log(pessoa1);
+ console.log(professor1);
+ console.log(aluno1);
